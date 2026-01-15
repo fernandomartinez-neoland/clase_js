@@ -8,8 +8,14 @@
   </head>
   <body>
     <h1 id="titulo">Hello Worldooooo!</h1>
+    <p id="parrafo">parrafo</p>
     <script>
-      const title = document.getElementById("titulo");
+      let title = document.getElementById("titulo");
+      console.log(title.textContent);
+      title.textContent = "title modificado";
+      console.log(title.textContent);
+
+      title = document.getElementById("parrafo");
       console.log(title.textContent);
     </script>
   </body>
