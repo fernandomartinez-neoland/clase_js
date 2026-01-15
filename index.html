@@ -9,6 +9,13 @@
   <body>
     <h1 id="titulo">Hello Worldooooo!</h1>
     <p id="parrafo">parrafo</p>
+    <img
+      id="imagen"
+      src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png"
+      alt=""
+    />
+
+    <button id="click">click</button>
     <script>
       let title = document.getElementById("titulo");
       console.log(title.textContent);
@@ -17,6 +24,18 @@
 
       title = document.getElementById("parrafo");
       console.log(title.textContent);
+      console.dir(title);
+
+      const imagen = document.getElementById("imagen");
+      console.log(imagen.src);
+      console.dir(imagen);
+
+      ///////////////////////////////////////////////////////////////////
+      const btnClick = document.getElementById("click");
+
+      btnClick.addEventListener("click", () => {
+        console.log("wertuygºioj");
+      });
     </script>
   </body>
 </html>
