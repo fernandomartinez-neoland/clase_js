@@ -17,14 +17,14 @@
 
     <button id="click">click</button>
     <script>
-      let title = document.getElementById("titulo");
-      console.log(title.textContent);
-      title.textContent = "title modificado";
+      const title = document.getElementById("titulo");
       console.log(title.textContent);
 
-      title = document.getElementById("parrafo");
       console.log(title.textContent);
-      console.dir(title);
+
+      //   title = document.getElementById("parrafo");
+      //   console.log(title.textContent);
+      //   console.dir(title);
 
       const imagen = document.getElementById("imagen");
       console.log(imagen.src);
@@ -34,6 +34,7 @@
       const btnClick = document.getElementById("click");
 
       btnClick.addEventListener("click", () => {
+        title.textContent = "title modificado";
         console.log("wertuygºioj");
       });
     </script>
